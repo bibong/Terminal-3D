@@ -149,7 +149,7 @@ int main(int argc, char* argv[]) {
                 Z_BUF[pos_x][pos_y] = vertex.z;
             }
         }
-        std::system("clear");
+        std::printf("\x1b[d");
         for (int i = viewport_height - 1; i >= 0; --i) {
             for (int j = 0; j < viewport_width; ++j) {
                 std::putchar(BUF[j][i] ? BUF[j][i] : ' ');
